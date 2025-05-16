@@ -1,129 +1,132 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SGE - Sistema de Gestión Empresarial</title>
-  <link rel="stylesheet" href="css/cssJSG.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
-</head>
-<body>
-  <header class="header">
-    <div class="container flex-between">
-      <a href="#" class="logo">SGE</a>
-      <nav class="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#precios">Precios</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <div class="actions">
-        <button class="btn-link">Iniciar sesión</button>
-        <button class="btn-primary">Registrarse</button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h1>Transforme su empresa con SGE</h1>
-        <p>Optimice procesos y tome decisiones basadas en datos con nuestra plataforma integral.</p>
-        <div class="hero-actions">
-          <button class="btn-primary">Solicitar demo</button>
-          <button class="btn-outline">Conocer más</button>
-        </div>
-      </div>
-    </section>
-    <section id="caracteristicas" class="features">
-      <div class="container">
-        <h2>Características principales</h2>
-        <div class="features-grid">
-          <div class="feature">
-            <i class="ri-dashboard-line"></i>
-            <h3>Panel intuitivo</h3>
-            <p>KPIs y paneles personalizables en tiempo real.</p>
-          </div>
-          <div class="feature">
-            <i class="ri-file-chart-line"></i>
-            <h3>Informes avanzados</h3>
-            <p>Visualizaciones interactivas para decisiones basadas en datos.</p>
-          </div>
-          <div class="feature">
-            <i class="ri-user-settings-line"></i>
-            <h3>Recursos humanos</h3>
-            <p>Gestión de personal, nóminas y desempeño.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="precios" class="pricing">
-      <div class="container">
-        <h2>Planes y precios</h2>
-        <div class="pricing-grid">
-          <div class="plan">
-            <h3>Básico</h3>
-            <div class="price">€49 <span>/mes</span></div>
-            <ul>
-              <li>Hasta 5 usuarios</li>
-              <li>Módulos básicos</li>
-              <li>2GB almacenamiento</li>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SGE 4 everyone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/cssJSG.css">
+        <link rel ="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="./imgs/SGE.jpg">
+            <h1>Sistemas de Gestión Empresarial</h1>
+        </header>
+        
+        <nav>
+            <ul >
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./otraswebs/instalacion.html">Instalación</a></li>
+                <li><a href="./otraswebs/accesoseguro.html">Acceso seguro</a></li>
+                <li><a href="./otraswebs/usoSGE.html">Uso del SGE</a></li>
             </ul>
-            <button class="btn-outline">Prueba gratuita</button>
-          </div>
-          <div class="plan plan-popular">
-            <h3>Profesional</h3>
-            <div class="price">€99 <span>/mes</span></div>
-            <ul>
-              <li>Hasta 20 usuarios</li>
-              <li>Todos los módulos</li>
-              <li>10GB almacenamiento</li>
-            </ul>
-            <button class="btn-primary">Prueba gratuita</button>
-          </div>
-          <div class="plan">
-            <h3>Empresarial</h3>
-            <div class="price">€199 <span>/mes</span></div>
-            <ul>
-              <li>Usuarios ilimitados</li>
-              <li>Personalizaciones</li>
-              <li>50GB almacenamiento</li>
-            </ul>
-            <button class="btn-outline">Contactar ventas</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contacto" class="contact">
-      <div class="container contact-grid">
-        <div>
-          <h2>Contáctenos</h2>
-          <p>Resolvemos sus dudas y le ayudamos a encontrar la mejor solución.</p>
-          <ul class="contact-info">
-            <li><i class="ri-map-pin-line"></i> Calle Innovación, 123, Madrid</li>
-            <li><i class="ri-phone-line"></i> +34 91 123 45 67</li>
-            <li><i class="ri-mail-line"></i> info@sge-system.com</li>
-          </ul>
-        </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Nombre completo" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Empresa" />
-          <textarea rows="3" placeholder="¿Cómo podemos ayudarle?" required></textarea>
-          <button type="submit" class="btn-primary">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container flex-between">
-      <span>© 2025 SGE. Todos los derechos reservados.</span>
-      <div class="footer-links">
-        <a href="#">Términos</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Cookies</a>
-      </div>
-    </div>
-  </footer>
-</body>
+        </nav>
+        
+        <!-- Lo de arriba es fijo para todas las páginas -->
+
+
+
+        
+        <aside>
+            <img>
+             <section>
+                <h2>¿Listo para transformar tu empresa?</h2>
+                <p>Descubre cómo los sistemas de gestión empresarial pueden optimizar tus operaciones y aumentar tu rentabilidad.</p>
+                <a href="https://www.odoo.com/es_ES" target="_blank" class="rat">Explorar Sistema</a>
+            </section>
+        </aside>
+        
+
+
+
+        <main>
+            <section class="pato">
+                <h2>Bienvenido a Sistemas de Gestión Empresarial</h2>
+                <p>Los Sistemas de Gestión Empresarial (ERP) integran y automatizan procesos clave de tu empresa, mejorando la eficiencia y la toma de decisiones.</p>
+            </section>
+            <section class="rato">
+                <h2>Características Destacadas</h2>
+                <div class="reco">
+                    <strong>Integración Total:</strong> Todos los departamentos conectados en una sola plataforma.
+                </div>
+                <div class="reco">
+                    <strong>Análisis en Tiempo Real:</strong> Informes y estadísticas actualizadas.
+                </div>
+                <div class="reco">
+                    <strong>Automatización:</strong> Procesos repetitivos gestionados automáticamente.
+                </div>
+                <div class="reco">
+                    <strong>Seguridad Avanzada:</strong> Protección de datos empresariales.
+                </div>
+            </section>
+           
+
+
+
+            <section class="tato">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <section>
+                <div class="reco">
+                    <p>"Implementar este sistema ERP ha sido una de las mejores decisiones para nuestra empresa. Hemos reducido costos operativos en un 30% y mejorado la eficiencia en todos los departamentos."</p>
+                    <p><strong>Carlos Rodríguez</strong> - Director de Operaciones, Tecnosoluciones S.A.</p>
+                </div>
+                <div class="reco">
+                    <p>"La integración de todos nuestros procesos en un solo sistema nos ha permitido tener una visión global del negocio. La toma de decisiones es ahora mucho más ágil y basada en datos reales."</p>
+                    <p><strong>Elena Martínez</strong> - CEO, Distribuciones Globales</p>
+                </div>
+                <div class="reco">
+                    <p>"El soporte técnico ha sido excepcional durante todo el proceso de implementación. El sistema es intuitivo y nuestro equipo se adaptó rápidamente a la nueva plataforma."</p>
+                    <p><strong>Miguel Fernández</strong> - Director de TI, Innova Retail</p>
+                </div>
+                </section>
+            </section>
+        </main>
+        
+
+
+
+    <!-- Lo de abajo es fijo para todas las páginas -->
+        <footer>
+            <p>Soluciones integrales para la gestión empresarial moderna, optimizando procesos y mejorando resultados.</p>
+            <!-- Los símbolos de los iconos los ha puesto la IA porque se me ha olvidado la contraseña de fontawesome, los estilos de los iconos los he puesto yo -->
+            <div style="display: flex; align-items: center; gap: 18px;">
+                <a href="https://www.youtube.com/" target="_blank" title="YouTube" style="display:inline-block;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="width:28px;height:28px;filter:invert(1);">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram" style="display:inline-block;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:28px;height:28px;filter:invert(1);">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" title="Facebook" style="display:inline-block;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:28px;height:28px;filter:invert(1);">
+                </a>
+                <a href="https://x.com/" target="_blank" title="X (Twitter)" style="display:inline-block;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" style="width:28px;height:28px;filter:invert(1);">
+                </a>
+            </div>
+            <p> 2025 SGE. Todos los derechos reservados.</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+        <script>
+            let aceptar;
+            aceptar = window.prompt("Introduce 'aceptar', para indicar que estas de acuerdo con el uso de cookies ");
+            if (aceptar === "aceptar"){
+                window.alert("Gracias por aceptar nuestras cookies");
+            }
+            else{
+                window.alert("¿No aceptas las cookies? Nos da igual, las vamos a usar igual");
+            }
+        </script>
+    </body>
 </html>
+
