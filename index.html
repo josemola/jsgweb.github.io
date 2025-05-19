@@ -17,7 +17,8 @@
         </header>
         
         <nav>
-            <ul >
+            <button class="abrir" id="hamburguesa"> ☰ </button>
+            <ul class="ocultar" id="lista">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./otraswebs/instalacion.html">Instalación</a></li>
                 <li><a href="./otraswebs/accesoseguro.html">Acceso seguro</a></li>
@@ -31,12 +32,15 @@
 
         
         <aside>
-            <img>
+            
              <section>
                 <h2>¿Listo para transformar tu empresa?</h2>
                 <p>Descubre cómo los sistemas de gestión empresarial pueden optimizar tus operaciones y aumentar tu rentabilidad.</p>
                 <a href="https://www.odoo.com/es_ES" target="_blank" class="rat">Explorar Sistema</a>
+                <p></p>
+                
             </section>
+            <img src="./imgs/parindex.webp">
         </aside>
         
 
@@ -47,16 +51,17 @@
                 <h2>Bienvenido a Sistemas de Gestión Empresarial</h2>
                 <p>Los Sistemas de Gestión Empresarial (ERP) integran y automatizan procesos clave de tu empresa, mejorando la eficiencia y la toma de decisiones.</p>
             </section>
+
+            
             <section class="rato">
                 <h2>Características Destacadas</h2>
-                <div class="reco">
-                    <strong>Integración Total:</strong> Todos los departamentos conectados en una sola plataforma.
+                <div class="reco"> <strong>Integración Total:</strong> Todos los departamentos conectados en una sola plataforma.
                 </div>
                 <div class="reco">
                     <strong>Análisis en Tiempo Real:</strong> Informes y estadísticas actualizadas.
                 </div>
                 <div class="reco">
-                    <strong>Automatización:</strong> Procesos repetitivos gestionados automáticamente.
+                <strong>Automatización:</strong> Procesos repetitivos gestionados automáticamente.
                 </div>
                 <div class="reco">
                     <strong>Seguridad Avanzada:</strong> Protección de datos empresariales.
@@ -66,23 +71,23 @@
 
 
 
-            <section class="tato">
+        <section class="tato">
                 <h2>Lo que dicen nuestros clientes</h2>
-                <section>
+            <section>
                 <div class="reco">
                     <p>"Implementar este sistema ERP ha sido una de las mejores decisiones para nuestra empresa. Hemos reducido costos operativos en un 30% y mejorado la eficiencia en todos los departamentos."</p>
-                    <p><strong>Carlos Rodríguez</strong> - Director de Operaciones, Tecnosoluciones S.A.</p>
+                <p><strong>Carlos Rodríguez</strong> - Director de Operaciones, Tecnosoluciones S.A.</p>
                 </div>
                 <div class="reco">
                     <p>"La integración de todos nuestros procesos en un solo sistema nos ha permitido tener una visión global del negocio. La toma de decisiones es ahora mucho más ágil y basada en datos reales."</p>
-                    <p><strong>Elena Martínez</strong> - CEO, Distribuciones Globales</p>
+                <p><strong>Elena Martínez</strong> - CEO, Distribuciones Globales</p>
                 </div>
                 <div class="reco">
-                    <p>"El soporte técnico ha sido excepcional durante todo el proceso de implementación. El sistema es intuitivo y nuestro equipo se adaptó rápidamente a la nueva plataforma."</p>
-                    <p><strong>Miguel Fernández</strong> - Director de TI, Innova Retail</p>
+            <p>"El soporte técnico ha sido excepcional durante todo el proceso de implementación. El sistema es intuitivo y nuestro equipo se adaptó rápidamente a la nueva plataforma."</p>
+                <p><strong>Miguel Fernández</strong> - Director de TI, Innova Retail</p>
                 </div>
-                </section>
             </section>
+        </section>
         </main>
         
 
@@ -118,6 +123,13 @@
 
 
         <script>
+  const btn = document.getElementById('hamburguesa');
+  const menu = document.getElementById('lista');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('ocultar');
+  });
+
             let aceptar;
             aceptar = window.prompt("Introduce 'aceptar', para indicar que estas de acuerdo con el uso de cookies ");
             if (aceptar === "aceptar"){

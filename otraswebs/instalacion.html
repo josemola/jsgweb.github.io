@@ -17,7 +17,8 @@
         </header>
         
         <nav>
-            <ul >
+            <button class="abrir" id="hamburguesa"> ☰ </button>
+            <ul class="ocultar" id="lista">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./instalacion.html">Instalación</a></li>
                 <li><a href="./accesoseguro.html">Acceso seguro</a></li>
@@ -30,15 +31,14 @@
 
 
     <aside>
-<section>
+        <section>
                 <h2>¿No entiendes las instrucciones, o tienes alguna consulta?</h2>
                 <p>Por si acaso quieres hacerlo desde la misma guía de la web, te dejo este link.</p>
                 <a href="https://www.odoo.com/documentation/13.0/es/administration/install/install.html" target="_blank" class="rat">Explorar Sistema</a>
             </section>
-
+            
 
     </aside>    
-
 
 
     <main>
@@ -48,6 +48,34 @@
                 <p>Usamos Odoo, por su flexibilidad, capacidad de personalización, bajo costo, escalabilidad y facilidad de uso, a diferencia de otros, Odoo permite combinar módulos.</p>
             </section>
 
+        <section class="tato">
+            <h2>Instalación :</h2>
+            <div class="reco">
+                <p>Primero buscamos Odoo, y tenemos cuidado de no escoger un "patrocinado".</p>
+                <img src="../imgs/odoo1.png" alt="Pagina inicial odoo">
+            
+                </div><div class="reco">
+                <p>Proseguimos con instalación gratuita, estas son las únicas que son totalmente gratis y no necesitan de una prueba gratuita.</p>
+                <img src="../imgs/odoo2.png" alt="Pagina apps odoo">
+                
+                </div><div class="reco">
+                    <p>A continuación introducimos nuestros datos.</p>
+                    <img src="../imgs/odoo3.png" alt="datos">
+
+                 </div><div class="reco">
+                    <p>Se creará nuestro espacio, y se nos pedirán parámetros, no todos serán gratuitos.</p>
+                    <img src="../imgs/odoo4.png" alt="Insertar parametros">
+                 
+                </div><div class="reco">
+                <p>Resultados.</p>
+                <img src="../imgs/odoo5.png" alt="Resultados">
+
+                </div><div class="reco">
+                <p>Por si lo quieres en el escritorio. Clicamos en nuestro perfil y le damos a instalar odoo.</p>
+                <img src="../imgs/odoo6.png" alt="Instalar">
+
+            </div>
+            </section>
     </main>
 
 
@@ -74,6 +102,13 @@
         </footer>
         
         <script>
+  const btn = document.getElementById('hamburguesa');
+  const menu = document.getElementById('lista');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('ocultar');
+  });
+
             let aceptar;
             aceptar = window.prompt("Introduce 'si', para indicar que estas satisfecho con nuestra web.");
             if (aceptar === "si"){

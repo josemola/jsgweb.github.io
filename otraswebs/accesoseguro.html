@@ -17,7 +17,8 @@
         </header>
         
         <nav>
-            <ul >
+            <button class="abrir" id="hamburguesa"> ☰ </button>
+            <ul class="ocultar" id="lista">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./instalacion.html">Instalación</a></li>
                 <li><a href="./accesoseguro.html">Acceso seguro</a></li>
@@ -29,20 +30,42 @@
     </head>
 
 
-
-    <aside>
-
-
-
-    </aside>    
-
+<aside>
+            <img src="../imgs/asidefoto.jpeg">
+             
+        </aside>
+        
 
 
-    <main>
 
+        <main>
+            <section class="rato">
+                <h2>Tipos y mecanismos de acceso seguro</h2>
+                <div class="reco">
+                <p>Si desea ver los tipos de Sistemas de gestión empresarial aparte de Odoo, aquí tiene un link, <a href="https://wikidiferencias.com/tipos-y-diferencias-de-sistemas-de-gestion-empresarial/" target="_blank">Link</a>
+                    pero si usted es nuevo o principiante en este tema, le recomiendo usar el que recomendamos, que es bastante universal, los que define esta web son más enfocados a un sector o tareas concretas.</p>
+                </div>
+                <div class="reco">
+                    <p>Los mecanismos de acceso seguro más usados para los Sistemas de gestión empresarial son:
+                    <br> Control de accesos, gestión de contraseñas, copias de seguridad, verificación en dos pasos y cifrado de datos, entre otros.</p>
+                </div>
+            </section>
 
+            <section class="tato">
+                <h2>Roles y privilegios</h2>
+                <p>Los roles y privilegios nos son útiles para evitar las filtraciones de datos, evitar vulnerabilidades y acceso a usuarios no deseados.</p>
+                
+                <div class="reco">
+                <p>Los roles son un sistema de jerarquía de la empresa, cada uno tiene unos privilegios que les permitirán o no acceder a cierto contenido de la empresa. <br>
+                Siempre debe de haber 1 o 2 super usuarios con todos los roles y privilegios, y los demás tendrán roles con menores rangos, de igual manera, sigue existiendo la posibilidad de filtrar datos, aún con una cuenta de bajos roles, para ello se debe confiar en que el trabajador tenga una contraseña fuerte y no la deje guardada en el ordenador ni en la zona de trabajo.</p>
+                    </div>
+
+                <div class="reco">
+                    <p>Los privilegios son los permisos dados por el super usuario a los demás roles, estos también pueden ser dados a usuarios concretos, sin necesidad de rol, pero dárselo a un rol, permite repartir los mismos privilegios a un gran grupo de usuarios de manera eficaz.</p>
+                    </div>
+            </section>
     </main>
-
+<!-- Los section de final de página tienen que ser class="tato" porque sino se meten bajo la web y no se pueden leer -->
 
 
     <!-- Lo de abajo es fijo para todas las páginas -->
@@ -67,6 +90,13 @@
         </footer>
         
         <script >
+  const btn = document.getElementById('hamburguesa');
+  const menu = document.getElementById('lista');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('ocultar');
+  });
+
                            let aceptar;
             aceptar = window.prompt("Introduce 'si', para indicar que estas satisfecho con nuestra web.");
             if (aceptar === "si"){

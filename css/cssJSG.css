@@ -1,9 +1,11 @@
+/*TODO está en un solo css, porque quiero que todo tenga la misma "plantilla"*/
+
 body {
 background-color: rgb(222, 222, 222);
 display: grid;
 width: 100%;
 grid-template-columns: 25% 24% 24% 24% 3%;
-grid-template-rows:  10% 5% 1fr 1fr 10%;
+grid-template-rows:  200px 100px 1fr 1fr 200px;
 grid-template-areas:
                          "header nav nav nav ."
                          "header main main main ."
@@ -38,8 +40,8 @@ font-family: Arial, Helvetica, sans-serif;
 min-height: 120px;
 }
 header img{ 
-width: 200px;
-height: 170px;
+width: 150px;
+height: 120px;
 padding: 0;
 border-radius: 16px;
 object-fit: cover;
@@ -82,8 +84,9 @@ list-style: none;
 font-size: 20px;
 margin: 0;
 padding: 0;
-justify-content: space-evenly;
+justify-content: space-around;
 }
+/*No se como arreglar el boton "Instalación" se queda feo*/
 nav ul li {
 align-content: center;
 width: 10%;
@@ -108,6 +111,17 @@ nav ul li:hover {
  border: 3px solid #ff0055;
  transform: scale(1.08);
 }
+
+nav .abrir {
+    margin: 0 auto;
+    display: block;
+}
+
+.abrir{
+    display: none;
+
+}
+
 
 a{
 text-decoration: none;
@@ -134,15 +148,16 @@ aside{
  color: #7c4a00;
  min-height: 0;
 }
-aside img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 18px;
-    background: #fff3;
-    border: 3px solid #ffe082;
-    display: none;
+aside img{ 
+width: 100%;
+height: 100%;
+padding: 0;
+border-radius: 16px;
+object-fit: cover;
+margin-right: 0;
+border: 4px solid grey;
+box-shadow: 0 2px 8px #0001;
+display: block;
 }
 aside section{
     text-align: center;
@@ -421,10 +436,33 @@ height: auto;
 }
 
 
+@media (max-width: 1500px) {
+    header{
+        flex-direction: column;
+    }
+     main .tato section div img{
+        height: 100%;
+        width: 100%;
+
+    }
+/*El texto del header se sale, ^^   Con eso ya no */
+
+}
+@media (max-width: 800px) {
+.abrir{
+    display: flex;
+}
+.ocultar{
+    display: none;
+}
+nav .abrir {
+        margin: 0 auto;
+        display: block;
+    }
 
 
 
-@media (max-width: 1580px) {
+
     body {
         display: flex;
         flex-direction: column;
@@ -447,7 +485,6 @@ height: auto;
         margin: 0 ;
     }
     header {
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -473,7 +510,7 @@ height: auto;
 
 
 
-    nav ul {
+    nav ul{
         flex-direction: column;
         gap: 8px;
     }
@@ -497,7 +534,7 @@ height: auto;
         padding: 12px 4px 12px 4px;
         gap: 14px;
     }
-
+   
 
 
 

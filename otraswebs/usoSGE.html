@@ -17,7 +17,8 @@
         </header>
         
         <nav>
-            <ul >
+            <button class="abrir" id="hamburguesa"> ☰ </button>
+            <ul class="ocultar" id="lista">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./instalacion.html">Instalación</a></li>
                 <li><a href="./accesoseguro.html">Acceso seguro</a></li>
@@ -31,16 +32,37 @@
 
 
     <aside>
-
+        <section>
+                <h2>¿No sabes usar bien Odoo?</h2>
+                <p>Aquí tienes un video tutorial para ayudarte.</p>
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/jzpp-sLP-gI?si=cU9inDYVXSdMAlqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
 
 
     </aside>    
 
 
 
-    <main>
+     <main>
+            <section class="pato">
+                <h2>Información general</h2>
+                <p>Para usar el sistema de gestión empresarial, primero debemos haber hecho la "instalación", si no se ha realizado, se deberá hacer según los pasos indicados.</p>
+                <p>Una vez hecha toda la instalación y escogidas las aplicaciones, debemos configurarlas a nuestro gusto y propósito.</p>
+            
+            </section>
 
-
+            <section class="tato">
+                <h2>Informes y exportar información</h2>
+                <div class="reco">
+                <p>Se debe escoger la aplicación de informes y exportación, que son gratis.<br> Las configuras y agregas los campos a visualizar, personalizas el informe y lo generas.</p>
+                <p>Si no te queda claro, aquí tienes una web que te ayudará <a href="https://ndmarketingdigital.com/como-hacer-un-reporte-en-odoo/" target="_blank">Link</a>.</p>
+                <p>Para exportar la información, clicamos los datos a exportar, y al lado de acción, aparecerá un botón para exportarlo a tus hojas de cálculo.</p>
+            </div>
+                <div class="reco">
+                    <p>Si deseas más información o usar la IA para tú tarea,<br> aquí tienes un vídeo tutorial de cómo usarla.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S5OKGWLTCW4?si=TXqMQK53f1VrPPu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
     </main>
 
 
@@ -67,6 +89,13 @@
         </footer>
         
         <script>
+  const btn = document.getElementById('hamburguesa');
+  const menu = document.getElementById('lista');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('ocultar');
+  });
+
                let aceptar;
             aceptar = window.prompt("Introduce 'si', para indicar que estas satisfecho con nuestra web.");
             if (aceptar === "si"){
