@@ -114,13 +114,9 @@ nav ul li:hover {
 
 nav .abrir {
     margin: 0 auto;
-    display: block;
-}
-
-.abrir{
     display: none;
-
 }
+
 
 
 a{
@@ -450,7 +446,7 @@ height: auto;
 }
 @media (max-width: 800px) {
 .abrir{
-    display: flex;
+    display: block;
 }
 .ocultar{
     display: none;
